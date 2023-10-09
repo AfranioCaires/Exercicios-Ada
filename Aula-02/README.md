@@ -15,3 +15,7 @@ Aqui estão algumas informações sobre eles:
 2. Liste os itens de supermercado necessários para satisfazer as necessidades alimentares de todos os membros da família durante a semana.
 
 ![imagem](https://vargasleticia.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F9f29284f-4e16-4ce5-a570-5f0bd85bf977%2Ffd66298c-0c26-4ffb-8f63-ea3f9d4f86b4%2FCaptura_de_Tela_2023-10-04_as_21.56.04.png?table=block&id=bedcc106-3035-4be5-be9f-a35dc82b2d71&spaceId=9f29284f-4e16-4ce5-a570-5f0bd85bf977&width=540&userId=&cache=v2)
+
+3. Crie um cardápio semanal que inclua pratos que agradem a todos e leve em consideração as preferências alimentares e atividades de cada um.
+![imagem](https://vargasleticia.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F9f29284f-4e16-4ce5-a570-5f0bd85bf977%2F35d09a94-f1fc-49c1-980a-b886884d21b6%2FCaptura_de_Tela_2023-10-04_as_22.01.38.png?table=block&id=fa8a7272-f30f-46f7-997b-c57c18793033&spaceId=9f29284f-4e16-4ce5-a570-5f0bd85bf977&width=1590&userId=&cache=v2)
+4. Elabore uma lista, conforme o modelo abaixo, de afazeres para a semana, distribuindo tarefas como cozinhar, fazer compras, levar o filho à escola, praticar esportes, ajudar a filha com as aulas de piano, etc.   
