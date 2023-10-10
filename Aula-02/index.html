@@ -1,148 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 6</title>
-    <style>
-        table * {
-            padding: 5px;
-            border: 1px solid black;
-        }
-
-        .pai {
-            color:brown;
-        }
-
-        .mae {
-           color:blue;
-        }
-
-        .filho {
-            color: darkorange;
-        }
-
-        .filha {
-            color: green;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Supermercado</h1>
+    <div class="container">
 
-    <h2>Cores:</h2>
-    <p class="pai">pai</p>
-    <p class="mae">mae</p>
-    <p class="filho">filho</p>
-    <p class="filha">filha</p>
+        <h1>Schedule semanal da família Addams <span>&#128128;</span></h1>
+        <div class="listas-container">
+            <div>
+                <h2>Cores</h2>
+                <ul class="listas">
+                    <li class="pai-borda">Pai</li>
+                    <li class="mae-borda">Mãe</li>
+                    <li class="filho-borda">Filho</li>
+                    <li class="filha-borda">Filha</li>
+                </ul>
+            </div>
 
-    <h2>Lista de compras</h2>
+            <div>
+                <h2>Lista de compras</h2>
+                <ul class="listas">
+                    <li class="pai-borda">Maçã</li>
+                    <li class="mae-borda">Uva</li>
+                    <li class="filho-borda">Suco de uva</li>
+                    <li class="mae-borda">Pimenta</li>
+                    <li class="filho-borda">Suco de laranja</li>
+                    <li class="filha-borda">Lasanha</li>
+                </ul>
+            </div>
 
-    <ul>
-        <li class="pai">Maçã</li>
-        <li class="mae">Uva</li>
-        <li class="pai">Batata</li>
-        <li class="filho">Suco de uva</li>
-        <li class="filha">Queijo</li>
-        <li class="pai">Brócolis</li>
-        <li class="mae">Pimenta</li>
-        <li class="filho">Suco de laranja</li>
-        <li class="filha">Lasanha</li>
-        <li class="pai">Arroz</li>
-    </ul>
+            <div>
+                <h2>Lista de tarefas</h2>
+                <ul class="listas">
+                    <li class="pai-borda">Lavar o carro</li>
+                    <li class="mae-borda">Ajudar a filha nas aulas de piano</li>
+                    <li class="filho-borda">Estudar para a prova de matemática</li>
+                    <li class="filha-borda">Passear com o cachorro</li>
+                    <li class="pai-borda">Lavar a louça</li>
+                    <li class="mae-borda">Buscar os filhos na escola</li>
+                    <li class="filho-borda">Ajudar a irmã no dever de casa de português</li>
+                    <li class="filha-borda">Dar banho no cachorro</li>
+                </ul>
+            </div>
+        </div>
+        <div class="tabela">
+            <h2>Cardápio</h2>
+            <Table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Segunda</th>
+                        <th>Terça</th>
+                        <th>Quarta</th>
+                        <th>Quinta</th>
+                        <th>Sexta</th>
+                        <th>Sábado</th>
+                        <th>Domingo</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            café da manhã
+                        </th>
+                        <td>Salada de frutas</td>
+                        <td>Panquecas</td>
+                        <td>Sanduíche natural</td>
+                        <td>Frutas</td>
+                        <td>Pão francês</td>
+                        <td colspan="2">Ovos
+                            mexidos e frutas</td>
+                    </tr>
 
-    <Table>
-        <thead>
-            <tr>
-                <th></th>
-                <th>Segunda</th>
-                <th>Terça</th>
-                <th>Quarta</th>
-                <th>Quinta</th>
-                <th>Sexta</th>
-                <th>Sábado</th>
-                <th>Domingo</th>
-            </tr>
-            <tr>
-                <th>
-                    café da manhã
-                </th>
-                <td>Comida para café da manhã</td>
-                <td>Comida para café da manhã</td>
-                <td>Comida para café da manhã</td>
-                <td>Comida para café da manhã</td>
-                <td>Comida para café da manhã</td>
-                <td colspan="2">Algo interessante para o domingo</td>
-            </tr>
-            
-            <tr>
-                <th rowspan="2">
-                    almoço
-                </th>
-                <td> comida</td>
-                <td> comida</td>
-                <td> comida</td>
-                <td> comida</td>
-                <td> comida</td>
-                <td> comida</td>
-                <td> comida</td>
-            </tr>
-            <tr>
-                <td>comida</td>
-                <td>comida</td>
-                <td>comida</td>
-                <td>comida</td>
-                <td>comida</td>
-                <td>comida</td>
-                <td>comida</td>
-            </tr>
-            <tr>
-                <th>
-                    lanche
-                </th>
-                <td>lanche</td>
-                <td>lanche</td>
-                <td>lanche</td>
-                <td>lanche</td>
-                <td>lanche</td>
-                <td colspan="2">lanche</td>
+                    <tr>
+                        <th rowspan="2">
+                            almoço
+                        </th>
+                        <td>Lasanha de tomate</td>
+                        <td>Salada de brócolis</td>
+                        <td>Tacos mexicanos</td>
+                        <td>Batata recheada</td>
+                        <td>Spaghetti alle Vongole</td>
+                        <td>Filé à parmegiana e Lasanha Vegetariana</td>
+                        <td>Prato executivo</td>
+                    </tr>
+                    <tr>
+                        <td>Palha italiana</td>
+                        <td>Brigadeiro</td>
+                        <td>Petit gateau</td>
+                        <td>Barras de chocolate</td>
+                        <td>Sorvete</td>
+                        <td>Trufas</td>
+                        <td>Torta de limão</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            lanche
+                        </th>
+                        <td>Bolo</td>
+                        <td>Coockies</td>
+                        <td>Salada de frutas</td>
+                        <td>Misto quente</td>
+                        <td>Açaí</td>
+                        <td colspan="2">Bolo de limão</td>
 
-            </tr>
-            <tr>
-                <th rowspan="2">
-                    janta
-                </th>
-                <td>jantar interessante</td>
-                <td>jantar interessante</td>
-                <td>jantar interessante</td>
-                <td>jantar interessante</td>
-                <td>jantar interessante</td>
-                <td>jantar interessante</td>
-                <td>jantar interessante</td>
-            </tr>
-            <tr>
-                <td>jantar interessante mais ainda</td>
-                <td>jantar interessante mais ainda</td>
-                <td>jantar interessante mais ainda</td>
-                <td>jantar interessante mais ainda</td>
-                <td>jantar interessante mais ainda</td>
-                <td>jantar interessante mais ainda</td>
-                <td>jantar interessante mais ainda</td>
-            </tr>
-        </thead>
-    </Table>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">
+                            jantar
+                        </th>
+                        <td>Jantar de lasanha de berinjela</td>
+                        <td>Jantar de frango grelhado com quinoa</td>
+                        <td>Jantar de salmão assado com legumes</td>
+                        <td>Jantar de risoto de cogumelos</td>
+                        <td>Jantar de tacos vegetarianos</td>
+                        <td>Jantar de curry de grão de bico</td>
+                        <td>Jantar de pizza caseira</td>
 
-    <h2>Lista de tarefas</h2>
-    <ul>
-        <li class="pai">Lavar o carro</li>    
-        <li class="mae">Ajudar a filha nas aulas de piano</li>
-        <li class="filho">Estudar para a prova de matemática</li>
-        <li class="filha">Passear com o cachorro</li>
-        <li class="pai">Lavar a louça</li>
-        <li class="mae">Buscar os filhos na escola</li>
-        <li class="filho">Ajudar a irmã no dever de casa de português</li>
-        <li class="filha">Dar banho no cachorro</li>
-    </ul>
+                    </tr>
+                    <tr>
+                        <td>Jantar de lasanha de berinjela</td>
+                        <td>Jantar de frango grelhado com quinoa</td>
+                        <td>Jantar de salmão assado com legumes</td>
+                        <td>Jantar de risoto de cogumelos</td>
+                        <td>Jantar de tacos vegetarianos</td>
+                        <td>Jantar de curry de grão de bico</td>
+                        <td>Jantar de pizza caseira</td>
+
+                    </tr>
+                </thead>
+            </Table>
+        </div>
+    </div>
+
 </body>
+
 </html>

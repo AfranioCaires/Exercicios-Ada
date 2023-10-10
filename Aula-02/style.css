@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url(assets/dm-sans.ttf);
+  font-display: swap;
+}
+
+:root {
+  --navy-dark: hsl(199, 100%, 10%);
+  --navy-darker: hsl(199, 100%, 6%);
+  --softblue-light: hsl(197, 25%, 81%);
+  --softblue-lighter: hsl(194, 100%, 95%);
+  --berry-blue: hsl(194, 65%, 68%);
+  --pai: hsl(143, 65%, 68%);
+  --mae: hsl(311, 65%, 68%);
+  --filho: hsl(355, 65%, 68%);
+  --filha: hsl(31, 65%, 68%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  max-width: 80vw;
+}
+
+body {
+  font-size: 1rem;
+  background-color: var(--navy-dark);
+  color: var(--softblue-light);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+h1 {
+  margin: 40px 0px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.listas-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.listas {
+  list-style: none;
+  border: 1px solid #e5f9ff1f;
+  border-radius: 2px;
+  width: 300px;
+}
+
+.listas li:first-child {
+  border-radius: 2px 0 0 0;
+}
+
+.listas li:last-child {
+  border-radius: 0 0 0 2px;
+}
+
+.pai-borda {
+  border-left: 5px solid var(--pai);
+}
+
+.mae-borda {
+  border-left: 5px solid var(--mae);
+}
+
+.filho-borda {
+  border-left: 5px solid var(--filho);
+}
+
+.filha-borda {
+  border-left: 5px solid var(--filha);
+}
+
+.listas li:nth-child(even) {
+  background-color: hsl(199, 100%, 12%);
+}
+
+.listas li {
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px #e5f9ff1f;
+  overflow: hidden;
+}
+
+td,
+th {
+  border: 1px solid #e5f9ff1f;
+}
+
+table {
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+table th {
+  margin: 0px;
+  background-color: hsl(199, 100%, 12%);
+  padding: 15px;
+  text-transform: capitalize;
+}
+
+table tr:nth-child(odd) {
+  background-color: hsla(199, 56%, 15%, 0.882);
+}
+
+table td {
+  text-align: center;
+  padding: 10px;
+}
