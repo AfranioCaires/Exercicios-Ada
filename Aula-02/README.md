@@ -1,7 +1,8 @@
 # Organização da rotina familiar
 
 Objetivo: criar uma página para visualizar as informações da sua organização da rotina da familia.
-
+## Deploy
+Deploy feito utilizando o github pages. [Acesse a versão live do projeto aqui](https://afraniocaires.github.io/Exercicios-Ada/Aula-02/).
 ### Screenshots
 
 ![preview](./assets/preview1.png)
