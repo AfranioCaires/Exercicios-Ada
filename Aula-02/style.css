@@ -132,6 +132,9 @@ table td {
 }
 
 @media (max-width: 600px) {
+  .container {
+    max-width: 90vw;
+  }
   .listas-container {
     grid-template-columns: 1fr;
   }
