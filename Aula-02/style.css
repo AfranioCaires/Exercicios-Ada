@@ -52,10 +52,18 @@ h2 {
 }
 
 .listas {
-  list-style: none;
   border: 1px solid #e5f9ff1f;
   border-radius: 2px;
   width: 300px;
+  list-style-position: inside;
+}
+
+.nao-ordenada {
+  list-style: none;
+}
+
+ol li::marker {
+  color: var(--softblue-lighter);
 }
 
 .listas li:first-child {
@@ -121,4 +129,17 @@ table tr:nth-child(odd) {
 table td {
   text-align: center;
   padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .listas-container {
+    grid-template-columns: 1fr;
+  }
+  .listas {
+    width: 100%;
+  }
+
+  .tabela {
+    overflow-x: scroll;
+  }
 }
