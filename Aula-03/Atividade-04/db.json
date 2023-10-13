@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "nome": "Afranio",
+      "sobrenome": "Caires",
+      "email": "afraniomcaires@gmail.com",
+      "tamanhoCamiseta": "G",
+      "categoriaInscriacao": "5RUN",
+      "doacao": "1111",
+      "id": 2
+    },
+    {
+      "nome": "Teste",
+      "sobrenome": "Teste",
+      "email": "teste@email.com",
+      "tamanhoCamiseta": "GG",
+      "categoriaInscriacao": "4WALK",
+      "doacao": "100",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
