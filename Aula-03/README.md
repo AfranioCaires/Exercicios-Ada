@@ -4,10 +4,13 @@ O problema é que a organização está recebendo um grande número de inscriç�
 
 ## Screnshots
 
-- Mobile
-  ![preview mobile](./assets/mobile-preview.png)
-- Desktop
-  ![preview desktop](./assets/desktop-preview.png);
+### Mobile
+
+![preview mobile](./assets/mobile-preview.png)
+
+### Desktop
+
+![preview desktop](./assets/desktop-preview.png);
 
 ## Tarefa
 
