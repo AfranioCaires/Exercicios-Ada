@@ -18,7 +18,7 @@
 
     <main>
       <section class="wrapper-form">
-        <form action="http://localhost:3000/posts" method="post">
+        <form action="http://localhost:3000/registrations" method="post">
           <fieldset class="dados">
             <legend>Dados do participante</legend>
 
@@ -47,6 +47,7 @@
             <div class="camiseta">
               <label for="tamanhoCamiseta">Tamanho da camiseta</label>
               <select name="tamanhoCamiseta" id="tamanhoCamiseta" required>
+                <option value="" selected disabled>Escolha um tamanho...</option>
                 <option value="P">P</option>
                 <option value="M">M</option>
                 <option value="G">G</option>
@@ -61,6 +62,7 @@
 
             <label for="categoriaInscriacao">Categoria de inscrição</label>
             <select name="categoriaInscriacao" id="categoriaInscriacao" required>
+              <option value="" selected disabled>Escolha uma categoria...</option>
               <option value="3RUN">Corrida 3 km</option>
               <option value="5RUN">Corrida 5 km</option>
               <option value="4WALK">Caminhada 4 km</option>
