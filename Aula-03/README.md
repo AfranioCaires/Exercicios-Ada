@@ -1,8 +1,11 @@
 ## Atividade 4 [entrega] - Evento da ONG Ajude a Causa
 
 O problema é que a organização está recebendo um grande número de inscrições manualmente por e-mail e telefone, o que é demorado e propenso a erros. Além disso, eles não têm uma maneira eficaz de rastrear as doações e os detalhes dos participantes. Eles precisam urgentemente de um sistema de registro online para tornar o processo mais fácil, rápido e preciso.
-## Deploy 
+
+## Deploy
+
 Acessar a versão do live do projeto pelo Github Pages: [Link de acesso](https://afraniocaires.github.io/Exercicios-Ada/Aula-03/).
+
 ## Screnshots
 
 ### Mobile
@@ -11,7 +14,7 @@ Acessar a versão do live do projeto pelo Github Pages: [Link de acesso](https:/
 
 ### Desktop
 
-![preview desktop](./assets/desktop-preview.png);
+![preview desktop](./assets/desktop-preview.png)
 
 ## Tarefa
 
@@ -34,7 +37,4 @@ Sua missão é criar um formulário de registro de participantes para o evento "
 - Estilizar a pagina usando CSS vanilla
 - Validação de campos
 
-<aside>
 💡 Nesta atividade iremos utilizar o Json-server como API. Baixe o arquivo **AjudeACausa** no drive da disciplina. Lembre-se de inicializar o servidor estando dentro da pasta onde está o arquivo `db.json`
-
-</aside>
