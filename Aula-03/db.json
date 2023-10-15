@@ -1,9 +1,58 @@
 {
-  "posts": [
+  "registrations": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Jeferson Silva",
+      "age": 25,
+      "email": "jeferson@gmail.com",
+      "size": "GG",
+      "category": "3RUN",
+      "donation": 300.5
+    },
+    {
+      "id": 2,
+      "name": "Maria Santos",
+      "age": 30,
+      "email": "maria@gmail.com",
+      "size": "M",
+      "category": "5RUN",
+      "donation": 150.75
+    },
+    {
+      "id": 3,
+      "name": "Carlos Oliveira",
+      "age": 28,
+      "email": "carlos@gmail.com",
+      "size": "G",
+      "category": "4WALK",
+      "donation": 75
+    },
+    {
+      "id": 4,
+      "name": "Ana Souza",
+      "age": 22,
+      "email": "ana@gmail.com",
+      "size": "P",
+      "category": "3RUN",
+      "donation": 200.25
+    },
+    {
+      "id": 5,
+      "name": "João Pereira",
+      "age": 35,
+      "email": "joao@gmail.com",
+      "size": "XG",
+      "category": "5RUN",
+      "donation": 120
+    },
+    {
+      "id": 6,
+      "name": "Luisa Mendes",
+      "age": 29,
+      "email": "luisa@gmail.com",
+      "size": "GG",
+      "category": "4WALK",
+      "donation": 90.5
     },
     {
       "nome": "Afranio",
@@ -11,27 +60,8 @@
       "email": "afraniomcaires@gmail.com",
       "tamanhoCamiseta": "G",
       "categoriaInscriacao": "5RUN",
-      "doacao": "1111",
-      "id": 2
-    },
-    {
-      "nome": "Teste",
-      "sobrenome": "Teste",
-      "email": "teste@email.com",
-      "tamanhoCamiseta": "GG",
-      "categoriaInscriacao": "4WALK",
       "doacao": "100",
-      "id": 3
+      "id": 7
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
