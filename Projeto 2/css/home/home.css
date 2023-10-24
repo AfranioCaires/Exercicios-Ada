@@ -48,7 +48,7 @@
   }
 
   .introducao h1 {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 
   .introducao-conteudo {
@@ -70,7 +70,7 @@
   }
 }
 
-.refeicao-wrapper-card {
+.pedido-wrapper-card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -78,7 +78,7 @@
   overflow-x: auto;
 }
 
-.refeicao {
+.pedido {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
@@ -86,34 +86,42 @@
   width: 260px;
 }
 
-.refeicao-conteudo {
+#pedidos .descr {
+  margin: 16px 0;
+  max-width: 60ch;
+}
+#pedidos h3 {
+  margin-top: 20px;
+}
+
+.pedido-conteudo {
   padding: 20px;
 }
 
-.refeicao-tags {
+.pedido-tags {
   margin-bottom: 16px;
   display: flex;
   gap: 8px;
 }
 
-.refeicao p {
+.pedido p {
   margin-bottom: 10px;
 }
 
-.refeicao-atributos {
+.pedido-atributos {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.refeicao-img img {
+.pedido-img img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.refeicao:hover {
+.pedido:hover {
   transform: translateY(-5px);
 }
 
@@ -139,4 +147,29 @@
   width: 100%;
   border-radius: 10px;
   object-fit: cover;
+}
+
+#sobre {
+  padding: 30px 0;
+}
+
+#sobre p {
+  max-width: 80ch;
+  margin-top: 16px;
+}
+
+.sobre-bg {
+  background-color: var(--cor-s2);
+}
+
+.contato-bg {
+  background-color: var(--cor-1);
+}
+
+#contato h2 {
+  padding-top: 32px;
+}
+
+.search-box {
+  margin-bottom: 32px;
 }

@@ -10,14 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="header-bg">
     <div class="header container">
 
-      <a href="./">
+      <a href="#">
         <svg width="43" height="43" viewBox="0 0 80 43" fill="#ea1d2c" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 24.2583H6.08948L9.49868 7.47168H3.40838L0 24.2583Z"></path>
           <path d="M3.94678 4.83583H10.0338L11.016 0H4.92165L3.94678 4.83583Z"></path>
@@ -29,7 +28,7 @@
         </svg>
       </a>
 
-      <nav aria-label="primária">
+      <nav>
         <ul class="header-menu font-1-m cor-9">
           <li><a href="#pedidos">Pedidos</a></li>
           <li><a href="#contato">Contato</a></li>
@@ -58,44 +57,57 @@
     </div>
     <section id="pedidos">
       <div class="container">
-        <h2 class="font-1-xl cor-10">Disponível na sua região</h2>
-        <div class="refeicao-wrapper-card">
+        <div class="grid">
+          <div class="textos">
+            <h2 class="font-1-xl cor-10">Disponível na sua região</h2>
+            <p class="descr font-2-s cor-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ullam vel alias exercitationem, impedit dolorum aliquam eligendi corporis error aspernatur quibusdam eius laborum modi dicta quisquam laboriosam excepturi libero? Labore!</p>
+          </div>
 
-          <article class="refeicao">
-            <picture class="refeicao-img">
+          <div class="search-box cor-10 font-2-s">
+            <input class=" search-input" type="text" placeholder="Buscar restaurantes">
+            <button class=" search-btn"><img src="./img/svg/busca.svg" alt=""></button>
+          </div>
+        </div>
+
+        <h3 class="font-1-x cor-10">Comidas</h3>
+
+        <div class="pedido-wrapper-card">
+
+          <article class="pedido">
+            <picture class="pedido-img">
               <img src="https://unsplash.com/photos/MqT0asuoIcU/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjk4MTM0ODM3fA&force=true&w=640" alt="pizza de frango" />
             </picture>
 
-            <div class="refeicao-conteudo">
-              <div class="refeicao-tags">
+            <div class="pedido-conteudo">
+              <div class="pedido-tags">
                 <span class="tag padrao font-1-xs">Frete grátis</span>
                 <span class="tag cupom font-1-xs">cupom</span>
 
               </div>
-              <p class="refeicao-titulo font-1-m-b">Pizza de frango</p>
-              <p class="refeicao-titulo cor-p4 font-1-s-b">R$ 55</p>
+              <p class="pedido-titulo font-1-m-b">Pizza de frango</p>
+              <p class="pedido-titulo cor-p4 font-1-s-b">R$ 55</p>
 
-              <ul class="refeicao-atributos font-2-xs cor-7">
+              <ul class="pedido-atributos font-2-xs cor-7">
                 <p>Pizza de frango com cogumelos e frutos do mar.</p>
               </ul>
               <button class="botao-compra font-1-s-b cor-1">comprar</button>
             </div>
           </article>
 
-          <article class="refeicao">
-            <picture class="refeicao-img">
-              <img src="https://unsplash.com/photos/2RrBE90w0T8/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NjZ8fGZvb2R8cHR8MHx8fHwxNjk4MTM2MTg2fDA&force=true&w=640" alt="salada" />
+          <article class="pedido">
+            <picture class="pedido-img">
+              <img src="https://unsplash.com/photos/2RrBE90w0T8/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NjZ8fGZvb2R8cHR8MHx8fHwxNjk4MTM2MTg2fDA&force=true&w=640" width="300" height="300" alt="salada" />
             </picture>
 
-            <div class="refeicao-conteudo">
-              <div class="refeicao-tags">
+            <div class="pedido-conteudo">
+              <div class="pedido-tags">
                 <span class="tag padrao font-1-xs">Frete grátis</span>
 
               </div>
-              <p class="refeicao-titulo font-1-m-b">Salada</p>
-              <p class="refeicao-titulo cor-p4 font-1-s-b">R$ 25</p>
+              <p class="pedido-titulo font-1-m-b">Salada</p>
+              <p class="pedido-titulo cor-p4 font-1-s-b">R$ 25</p>
 
-              <ul class="refeicao-atributos font-2-xs cor-7">
+              <ul class="pedido-atributos font-2-xs cor-7">
                 <p>Salada com legumes e frutas e com molho shoyu.</p>
               </ul>
 
@@ -103,21 +115,21 @@
             </div>
           </article>
 
-          <article class="refeicao">
-            <picture class="refeicao-img">
+          <article class="pedido">
+            <picture class="pedido-img">
               <img src="https://unsplash.com/photos/UC0HZdUitWY/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjk4MTM0MTc1fA&force=true&w=640" alt="frango grelhado" />
             </picture>
 
-            <div class="refeicao-conteudo">
-              <div class="refeicao-tags">
+            <div class="pedido-conteudo">
+              <div class="pedido-tags">
                 <span class="tag padrao font-1-xs">Frete grátis</span>
                 <span class="tag cupom font-1-xs">cupom</span>
 
               </div>
-              <p class="refeicao-titulo font-1-m-b">Frango grelhado</p>
-              <p class="refeicao-titulo cor-p4 font-1-s-b">R$ 35</p>
+              <p class="pedido-titulo font-1-m-b">Frango grelhado</p>
+              <p class="pedido-titulo cor-p4 font-1-s-b">R$ 35</p>
 
-              <ul class="refeicao-atributos font-2-xs cor-7">
+              <ul class="pedido-atributos font-2-xs cor-7">
                 <p>Frango grelhado com molho especial de queijo e mostarda.</p>
               </ul>
               <button class="botao-compra font-1-s-b cor-1">comprar</button>
@@ -125,26 +137,109 @@
             </div>
           </article>
 
-          <article class="refeicao">
-            <picture class="refeicao-img">
+          <article class="pedido">
+            <picture class="pedido-img">
               <img src="https://unsplash.com/photos/Mzy-OjtCI70/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjk4MTM1Mzc4fA&force=true&w=640" alt="bolo de framboesa" />
             </picture>
 
-            <div class="refeicao-conteudo">
-              <div class="refeicao-tags">
+            <div class="pedido-conteudo">
+              <div class="pedido-tags">
                 <span class="tag cupom font-1-xs">cupom</span>
               </div>
-              <p class="refeicao-titulo font-1-m-b">Bolo de framboesa</p>
-              <p class="refeicao-titulo cor-p4 font-1-s-b">R$ 15</p>
+              <p class="pedido-titulo font-1-m-b">Bolo de framboesa</p>
+              <p class="pedido-titulo cor-p4 font-1-s-b">R$ 15</p>
 
-              <ul class="refeicao-atributos font-2-xs cor-7">
+              <ul class="pedido-atributos font-2-xs cor-7">
                 <p>Bolo de framboesa cremoso com leite ninho.</p>
               </ul>
               <button class="botao-compra font-1-s-b cor-1">comprar</button>
             </div>
           </article>
         </div>
-      </div>
+        <h3 class="font-1-x cor-10">Bebidas</h3>
+        <div class="pedido-wrapper-card">
+
+          <article class="pedido">
+            <picture class="pedido-img">
+              <img src="https://unsplash.com/photos/lw8GflbJwLc/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MjZ8fGRyaW5rfHB0fDB8fHx8MTY5ODE3NTkzMnww&force=true&w=640" alt="suco de manga com limão" />
+            </picture>
+
+            <div class="pedido-conteudo">
+              <div class="pedido-tags">
+                <span class="tag padrao font-1-xs">Frete grátis</span>
+                <span class="tag cupom font-1-xs">cupom</span>
+
+              </div>
+              <p class="pedido-titulo font-1-m-b">Suco de manga</p>
+              <p class="pedido-titulo cor-p4 font-1-s-b">R$ 5</p>
+
+              <ul class="pedido-atributos font-2-xs cor-7">
+                <p>Suco frescante com leve toque de limão.</p>
+              </ul>
+              <button class="botao-compra font-1-s-b cor-1">comprar</button>
+            </div>
+          </article>
+
+          <article class="pedido">
+            <picture class="pedido-img">
+              <img src="https://unsplash.com/photos/_82CV9I-TP8/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NTZ8fGRyaW5rfHB0fDB8fHx8MTY5ODE3NjA2OHww&force=true&w=640" alt="suco verde" />
+            </picture>
+
+            <div class="pedido-conteudo">
+              <div class="pedido-tags">
+                <span class="tag padrao font-1-xs">Frete grátis</span>
+                <span class="tag cupom font-1-xs">cupom</span>
+
+              </div>
+              <p class="pedido-titulo font-1-m-b">Suco verde</p>
+              <p class="pedido-titulo cor-p4 font-1-s-b">R$ 3</p>
+
+              <ul class="pedido-atributos font-2-xs cor-7">
+                <p>Suco verde detox de couve refrescante. </p>
+              </ul>
+              <button class="botao-compra font-1-s-b cor-1">comprar</button>
+            </div>
+          </article>
+
+          <article class="pedido">
+            <picture class="pedido-img">
+              <img src="https://unsplash.com/photos/5R-W-P7De5A/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8ODZ8fGRyaW5rfHB0fDB8fHx8MTY5ODE3NjU1NHww&force=true&w=640" alt="capuccino" />
+            </picture>
+
+            <div class="pedido-conteudo">
+              <div class="pedido-tags">
+                <span class="tag padrao font-1-xs">Frete grátis</span>
+              </div>
+              <p class="pedido-titulo font-1-m-b">Capuccino</p>
+              <p class="pedido-titulo cor-p4 font-1-s-b">R$ 8</p>
+
+              <ul class="pedido-atributos font-2-xs cor-7">
+                <p>Capuccino com flocos de chocolate amargo.</p>
+              </ul>
+              <button class="botao-compra font-1-s-b cor-1">comprar</button>
+            </div>
+          </article>
+
+          <article class="pedido">
+            <picture class="pedido-img">
+              <img src="https://unsplash.com/photos/O9Whoh12czM/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjk4MTc3MTgzfA&force=true&w=640" alt="caipirinha" />
+            </picture>
+
+            <div class="pedido-conteudo">
+              <div class="pedido-tags">
+                <span class="tag cupom font-1-xs">cupom</span>
+              </div>
+              <p class="pedido-titulo font-1-m-b">Caipirinha</p>
+              <p class="pedido-titulo cor-p4 font-1-s-b">R$ 12</p>
+
+              <ul class="pedido-atributos font-2-xs cor-7">
+                <p>Caipirinha tradicional 200ml com limão galego.</p>
+              </ul>
+              <button class="botao-compra font-1-s-b cor-1">comprar</button>
+            </div>
+          </article>
+
+        </div>
     </section>
     <section id="premium" class="container grid">
       <article class="premium-conteudo">
@@ -163,8 +258,29 @@
         <img src=" https://images.unsplash.com/photo-1494390248081-4e521a5940db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=806&q=80" alt="">
       </picture>
     </section>
+    <section id="sobre" class="sobre-bg">
+      <article class="container grid">
+        <div class="sobre-textos font-2-s cor-p2">
+          <h2 class="font-1-xl">Sobre o iFood</h2>
+          <p>Por incrível que pareça, a nossa história começou fora do mundo digital, em 2011, com a Disk Cook. Um guia (impresso!) de cardápios, com uma central telefônica para onde você ligava e fazia o seu pedido. A ideia do iFood surgiu aí, para melhorar essa experiência.</p>
+          <p>Não demorou muito pra gente sair do papel e ganhar o Brasil. Já no ano seguinte, lançamos o nosso aplicativo e o site. E a paixão por alimentação e tecnologia logo chamou a atenção de investidores importantes, como o Grupo Movile – que hoje tem 100% de participação no nosso negócio.</p>
+        </div>
+      </article>
+    </section>
+    <section id="contato" class="contato-bg">
+      <article class="container">
+        <h2 class="font-1-xl cor-10">Contato</h2>
+
+
+
+
+
+
+      </article>
+
+    </section>
   </main>
-  <footer class="footer-bg">
+  <footer class=" footer-bg">
     <div class="footer container">
       <svg width="63" height="63" viewBox="0 0 80 43" fill="#ea1d2c" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 24.2583H6.08948L9.49868 7.47168H3.40838L0 24.2583Z"></path>
@@ -200,8 +316,9 @@
         <nav>
           <ul class="font-1-m cor-9">
             <li><a href="#pedidos">Buscar restaurantes</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#premium">Premium</a></li>
             <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
 
           </ul>
         </nav>

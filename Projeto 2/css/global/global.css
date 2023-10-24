@@ -37,13 +37,5 @@ img {
 *::selection,
 *::-moz-selection {
   color: var(--cor-0);
-  background-color: var(--cor-p0);
-}
-
-*::-webkit-scrollbar-thumb {
-  background: var(--cor-p0);
-}
-
-*::-webkit-scrollbar-track {
-  background: #faf6ed;
+  background-color: var(--cor-s0);
 }

@@ -27,6 +27,7 @@
   --cor-s3: #ffdebb;
   --cor-s2: #fed298;
   --cor-s1: #ffb761;
+  --cor-s0: #f1d892;
 }
 
 .cor-12 {
@@ -101,4 +102,7 @@
 }
 .cor-s1 {
   color: var(--cor-s1);
+}
+.cor-s0 {
+  color: var(--cor-s0);
 }
