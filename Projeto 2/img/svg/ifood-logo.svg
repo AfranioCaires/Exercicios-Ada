@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   class="icon-brand icon-brand--primary"
+   viewBox="0 0 4096 4096"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="ifood-logo.svg"
+   width="4096"
+   height="4096"
+   style="fill:none"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="0.055242717"
+     inkscape:cx="816.30726"
+     inkscape:cy="900.96384"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <path
+     d="M 459.26615,2172.4054 H 701.10301 L 835.45682,1503.9952 H 593.61996 Z M 644.00264,1443.536 h 285.50185 l 47.02384,-235.1192 H 691.02648 Z m 151.14804,916.9647 h 241.83682 l 147.7892,-722.1517 h 181.3777 l 26.8707,-134.3538 h -178.0188 l 6.7177,-30.2296 c 10.0766,-57.1004 30.2296,-120.9185 120.9185,-120.9185 53.7415,0 104.1242,3.3589 154.5069,26.8708 l 26.8708,-141.0715 c -57.1004,-20.1531 -117.5597,-30.2296 -174.66,-30.2296 -194.8131,0 -329.1669,114.2007 -379.54956,295.5784 H 885.8395 l -26.87076,134.3538 h 83.97113 z"
+     id="path2"
+     style="fill:#ea1d2c;fill-opacity:1;stroke-width:33.58845139"
+     inkscape:connector-curvature="0"
+     inkscape:export-filename="C:\Users\suitedoalex\Desktop\logos comidas\ifood-logo.png"
+     inkscape:export-xdpi="123.75137"
+     inkscape:export-ydpi="123.75137" />
+  <path
+     d="m 1560.9675,2185.8408 c 285.5018,0 483.6737,-258.6311 483.6737,-470.2384 0,-157.8657 -144.4304,-225.0426 -285.5019,-225.0426 -312.3726,0 -483.6737,278.7841 -483.6737,470.2383 0,157.8658 147.7892,225.0427 285.5019,225.0427 m 765.8167,0 c 285.5018,0 483.6736,-258.6311 483.6736,-470.2384 0,-157.8657 -147.7892,-225.0426 -288.8607,-225.0426 -312.3725,0 -483.6737,278.7841 -483.6737,470.2383 0,157.8658 151.148,225.0427 288.8607,225.0427 m 876.6587,-13.4354 h 238.478 l 194.813,-950.5532 H 3394.897 l -57.1004,282.143 -100.7653,-10.0766 c -235.1192,0 -450.0853,302.2961 -450.0853,517.2622 0,87.33 57.1003,174.66 154.5068,174.66 137.7126,0 235.1192,-67.1769 275.4253,-134.3538 h 13.4354 z m -745.6636,500.4679 a 933.75899,933.75899 0 0 1 -671.7691,211.6073 c -319.0903,-20.1531 -547.4918,-265.3488 -587.798,-523.9799 h 13.4354 c 73.8946,161.2246 251.9134,312.3726 470.2384,335.8846 221.6838,26.8707 487.0326,-73.8946 631.4629,-211.6073 l -161.2246,-124.2773 h 487.0326 l -107.483,517.2622 -70.5359,-201.5307 z"
+     id="path4"
+     style="fill:#ea1d2c;fill-opacity:1;stroke-width:33.58845139"
+     inkscape:connector-curvature="0"
+     inkscape:export-filename="C:\Users\suitedoalex\Desktop\logos comidas\ifood-logo.png"
+     inkscape:export-xdpi="123.75137"
+     inkscape:export-ydpi="123.75137" />
+</svg>

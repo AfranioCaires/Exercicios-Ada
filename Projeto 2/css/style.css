@@ -1,0 +1,12 @@
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
+@import "./utilidades/componentes.css";
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+@import "./home/home.css";
+
+/* * {
+  outline: 1px solid red;
+} */
