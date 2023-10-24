@@ -34,8 +34,7 @@ img {
   display: block;
 }
 
-*::selection,
-*::-moz-selection {
+*::selection {
   color: var(--cor-0);
-  background-color: var(--cor-s0);
+  background-color: var(--cor-p0);
 }
