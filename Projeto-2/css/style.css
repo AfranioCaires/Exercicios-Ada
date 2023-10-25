@@ -4,7 +4,7 @@
 @import "./global/global.css";
 @import "./global/header.css";
 @import "./global/footer.css";
-@import "./home/home.css";
+@import "./home/introducao.css";
 @import "./home/pedidos.css";
 @import "./home/premium.css";
 @import "./home/sobre.css";
