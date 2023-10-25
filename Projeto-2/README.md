@@ -2,6 +2,10 @@
 
 Neste projeto final, você e seu grupo, como participantes da turma #VemSerTech, que é uma parceria entre o iFood e a Ada, terão a oportunidade de aplicar todo o conhecimento adquirido em HTML e CSS para desenvolver uma proposta inovadora de website para o iFood, uma das principais plataformas de entrega de comida online. Sua missão é apresentar uma visão criativa e aprimorada para a renovação do iFood por meio deste projeto de website.
 
+## Deploy
+
+Veja o deplpoy do site em [link de deploy do site](https://afraniocaires.github.io/Exercicios-Ada/Projeto-2/).
+
 ## Projeto Two [ Entrega]
 
 **Grupos:** 9 grupos
