@@ -1,0 +1,12 @@
+#sobre {
+  padding: 48px 0;
+}
+
+#sobre p {
+  max-width: 80ch;
+  margin-top: 16px;
+}
+
+.sobre-bg {
+  background-color: var(--cor-s2);
+}

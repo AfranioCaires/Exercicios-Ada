@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>iFood</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
@@ -60,7 +60,7 @@
         <div class="grid">
           <div class="textos">
             <h2 class="font-1-xl cor-10">Disponível na sua região</h2>
-            <p class="descr font-2-s cor-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ullam vel alias exercitationem, impedit dolorum aliquam eligendi corporis error aspernatur quibusdam eius laborum modi dicta quisquam laboriosam excepturi libero? Labore!</p>
+            <p class="descr font-2-s cor-7">Descubra cardápios deliciosos, leia avaliações de outros clientes e veja fotos dos pratos que você ama. Comece a explorar agora e descubra os sabores que estão ao seu redor. A melhor culinária da sua região está ao seu alcance com apenas alguns cliques.</p>
           </div>
 
           <div class="search-box cor-10 font-2-s">
@@ -245,7 +245,7 @@
       <article class="premium-conteudo">
         <span class="espacamento-texto cor-p4 font-1-s-b">premium</span>
         <h2 class="font-1-xl cor-10">Descubra o mundo</h1>
-          <p class="font-2-s cor-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ullam vel alias exercitationem, impedit dolorum aliquam eligendi corporis error aspernatur quibusdam eius laborum modi dicta quisquam laboriosam excepturi libero? Labore!</p>
+          <p class="font-2-s cor-7">Descubra uma variedade de sabores e experiências gastronômicas com nosso serviço premium. Explore um mundo de opções culinárias que atendem a diversos gostos e paladares. De pratos exóticos a favoritos locais, estamos aqui para satisfazer seus desejos culinários.</p>
           <ol class="lista-linkada font-1-s-b cor-10">
             <li>Diga o seu gosto</li>
             <li>Escolha um plano e assine</li>
@@ -268,16 +268,39 @@
       </article>
     </section>
     <section id="contato" class="contato-bg">
-      <article class="container">
-        <h2 class="font-1-xl cor-10">Contato</h2>
+      <article class="container grid">
+        <div>
+          <p class="font-1-s-b cor-7">RESPOSTAS EM ATÉ 24H</p>
+          <h2 class="font-1-xl cor-10">Nosso contato</h2>
 
+          <form class="form" action="" method="post">
 
+            <div>
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            </div>
 
+            <div>
+              <label for="telefone">Telefone</label>
+              <input type="text" id="telefone" name="telefone" placeholder="(11) 9 9999-9999">
+            </div>
 
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="contato@email.com">
+            </div>
 
-
+            <div>
+              <label for="mensagem">Mensagem</label>
+              <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
+            </div>
+            <button class="botao-form">Enviar mensagem</button>
+          </form>
+        </div>
+        <picture class="pattern">
+          <img src="./img/pattern.jpeg" alt="">
+        </picture>
       </article>
-
     </section>
   </main>
   <footer class=" footer-bg">

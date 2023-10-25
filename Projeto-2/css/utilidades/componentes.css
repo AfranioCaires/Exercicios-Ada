@@ -21,7 +21,8 @@
 }
 
 .botao,
-.botao-outline {
+.botao-outline,
+.botao-form {
   &:hover {
     opacity: 0.7;
   }
@@ -58,6 +59,20 @@
   &:hover {
     background-color: var(--cor-p4);
   }
+}
+
+.botao-form {
+  padding: 10px 20px;
+  display: inline-block;
+  background: var(--cor-p0);
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: var(--cor-0);
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  max-width: max-content;
+  text-align: center;
+  cursor: pointer;
 }
 
 .tag {

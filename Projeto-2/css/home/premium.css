@@ -1,0 +1,18 @@
+#premium {
+  padding: 20px 0;
+}
+
+#premium h2 {
+  margin: 12px 0;
+}
+
+.premium-conteudo {
+  padding: 30px;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}

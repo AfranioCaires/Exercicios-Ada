@@ -4,9 +4,8 @@
 @import "./global/global.css";
 @import "./global/header.css";
 @import "./global/footer.css";
-
 @import "./home/home.css";
-
-/* * {
-  outline: 1px solid red;
-} */
+@import "./home/pedidos.css";
+@import "./home/premium.css";
+@import "./home/sobre.css";
+@import "./home/formulario.css";
