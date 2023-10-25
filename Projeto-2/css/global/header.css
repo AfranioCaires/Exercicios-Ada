@@ -60,7 +60,7 @@ header {
   }
 
   .header-menu a {
-    background: var(--cor-0);
+    background: transparent;
     color: var(--cor-9);
     border: 1px solid var(--cor-9);
 
