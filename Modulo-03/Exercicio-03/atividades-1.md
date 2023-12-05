@@ -36,15 +36,15 @@ Crie um conversor de moeda simples em JavaScript utilizando POO. O conversor dev
 
 **Exemplo de Uso:**
 
-````javascript
+```javascript
 // Criando instância do conversor de moeda
 const conversorMoeda = new ConversorDeMoeda(5.0); // Taxa de câmbio: 5.0
 
 // Convertendo moeda
-const valorConvertido = conversorMoeda.converter(100, 'USD', 'BRL');
+const valorConvertido = conversorMoeda.converter(100, "USD", "BRL");
 console.log(`Valor convertido: ${valorConvertido} BRL`);
-// Saída esperada: Valor convertido: 500.0 BRL```
-
+// Saída esperada: Valor convertido: 500.0 BRL
+```
 
 # Contador de Palavras em JavaScript
 
@@ -53,17 +53,19 @@ Requisitos:
 Implemente um contador de palavras em JavaScript utilizando POO. O contador deve receber uma string como entrada e fornecer a contagem de palavras.
 
 1. **Classe: ContadorDePalavras**
-    - Atributo: `texto` (string de entrada).
-    - Método: `contarPalavras()`, que retorna o número de palavras no texto.
+   - Atributo: `texto` (string de entrada).
+   - Método: `contarPalavras()`, que retorna o número de palavras no texto.
 
 **Exemplo de Uso:**
 
 ```javascript
 // Criando instância do contador de palavras
-const contadorPalavras = new ContadorDePalavras('JavaScript é uma linguagem poderosa.');
+const contadorPalavras = new ContadorDePalavras(
+  "JavaScript é uma linguagem poderosa."
+);
 
 // Obtendo contagem de palavras
 const contagem = contadorPalavras.contarPalavras();
 console.log(`Número de palavras: ${contagem}`);
-// Saída esperada: Número de palavras: 5```
-````
+// Saída esperada: Número de palavras: 5
+```
