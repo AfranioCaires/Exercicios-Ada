@@ -1,188 +1,131 @@
-class Task {
-  #id = Date.now().toString().slice(-5);
-  constructor(name, description) {
-    name = name.trim();
-    description = description.trim();
+class Tarefa {
+  constructor(descricao, prioridade, status) {
+    if (!descricao || !prioridade || !status)
+      throw new Error(
+        "Os parâmetros 'descricao', 'prioridade' e 'status' são obrigatórios!"
+      );
 
-    if (!name || name.length < 4)
-      throw new Error("O título deve ter no mínimo 4 caracteres.");
-    if (!isNaN(name))
-      throw new Error("O título não deve conter apenas números.");
-    if (description.length < 20)
-      throw new Error("A descrição deve ter no mínimo 20 caracteres.");
+    if (typeof descricao !== "string" || descricao.length === 0)
+      throw new Error("A descrição deve ser uma string não vazia!");
 
-    this.name = name;
-    this.description = description;
-    this.status = "Pendente";
-  }
+    prioridade = prioridade.toLowerCase();
+    if (
+      !["baixa", "media", "média", "alta"].includes(prioridade) ||
+      typeof prioridade !== "string"
+    )
+      throw new Error(
+        "A prioridade deve ser uma string contendo a prioridade. Prioridades aceitas: baixa, média ou alta!"
+      );
 
-  get id() {
-    return this.#id;
-  }
+    status = status.toLowerCase();
+    if (!["pendente", "concluída"].includes(status))
+      throw new Error("O status deve ser pendente ou concluída!");
 
-  editName(newName) {
-    if (newName === null) return "Operação cancelada.";
-    newName = newName.trim();
-    if (!newName || newName.length < 4)
-      throw new Error("O título deve ter no mínimo 4 caracteres.");
-    if (!isNaN(newName))
-      throw new Error("O título não deve conter apenas números.");
-
-    this.name = newName;
-    return "Nome alterado com sucesso.";
-  }
-
-  editDescription(newDescription) {
-    if (newDescription === null) return "Operação cancelada.";
-    newDescription = newDescription.trim();
-    if (newDescription.length < 20)
-      throw new Error("A descrição deve ter no mínimo 20 caracteres.");
-
-    this.description = newDescription;
-    return "Descrição alterada com sucesso.";
-  }
-
-  editStatus(newStatus) {
-    if (newStatus === null) return "Operação cancelada.";
-    if (!newStatus) throw new Error("O status não pode ser vazio.");
-    if (typeof newStatus !== "string")
-      throw new Error("O status deve ser uma string.");
-
-    newStatus = newStatus.trim().toLowerCase();
-    const estadosPermitidos = ["pendente", "fazendo", "feita"];
-
-    if (!estadosPermitidos.includes(newStatus))
-      throw new Error("O status deve ser Pendente, Fazendo ou Feita.");
-
-    this.status = newStatus;
-    return "Status alterado com sucesso.";
+    this.descricao = descricao;
+    this.prioridade = prioridade;
+    this.status = status;
   }
 }
 
-class TaskManager {
-  #tasks = [];
-
-  get tasks() {
-    return this.#tasks;
+class ListaTarefas {
+  #tarefas = [];
+  constructor(nome) {
+    this.nome = nome;
   }
 
-  addTask(task) {
-    if (!task instanceof Task)
-      throw new Error("A tarefa deve ser uma instância da classe Task.");
-    if (this.#tasks.some((t) => t.name === task.name))
-      throw new Error("Já existe uma tarefa com esse título.");
-    this.#tasks.push(task);
-    return "Tarefa adicionada com sucesso.";
+  adicionarTarefa(tarefa) {
+    if (!(tarefa instanceof Tarefa))
+      throw new Error("O parâmetro tarefa deve ser do tipo Tarefa!");
+    this.#tarefas.push(tarefa);
   }
 
-  removeTask(taskId) {
-    if (taskId === null) return "Operação cancelada.";
-    const index = this.#tasks.findIndex((task) => task.id === taskId);
-    if (index === -1) throw new Error("Não existe uma tarefa com esse ID.");
-    this.#tasks.splice(index, 1);
-    return "Tarefa removida com sucesso.";
-  }
-
-  searchTask(taskId) {
-    const task = this.#tasks.find((task) => task.id === taskId);
-    if (!task) throw new Error("Não existe uma tarefa com esse ID.");
-    return task;
-  }
-
-  menu() {
-    let option = prompt(
-      "Selecione uma opção:\n1 - Adicionar tarefa\n2 - Procurar tarefa\n3 - Listar tarefas\n4 - Sair"
-    );
-    if (option === null) return option;
-    if (!option || isNaN(option) || option < 1 || option > 4)
-      throw new Error("Opção inválida.");
-    return option;
-  }
-}
-
-const taskManager = new TaskManager();
-
-let isRunning = true;
-while (isRunning) {
-  const option = taskManager.menu();
-  try {
-    switch (option) {
-      case "1":
-        alert(
-          taskManager.addTask(
-            new Task(
-              prompt("Digite o nome da tarefa"),
-              prompt("Digite a descrição da tarefa")
-            )
-          )
-        );
-        break;
-
-      case "2":
-        const searchedTask = taskManager.searchTask(
-          prompt("Digite o ID da tarefa que deseja buscar:")
-        );
-        const taskOptions = prompt(
-          `Tarefa encontrada:\nNome: ${searchedTask.name}\nDescrição: ${searchedTask.description}\nStatus: ${searchedTask.status}\n\n1. editar nome\n2. editar descrição\n3. editar status\n4. remover tarefa\n5. voltar`
-        );
-        if (taskOptions === null) break;
-        switch (taskOptions) {
-          case "1":
-            alert(searchedTask.editName(prompt("Digite o novo nome:")));
-            break;
-
-          case "2":
-            alert(
-              searchedTask.editDescription(prompt("Digite a nova descrição:"))
-            );
-            break;
-
-          case "3":
-            alert(searchedTask.editStatus(prompt("Digite o novo status:")));
-            break;
-
-          case "4":
-            alert(taskManager.removeTask(searchedTask.id));
-            break;
-
-          case "5":
-            break;
-
-          default:
-            alert("Opção inválida.");
-            break;
-        }
-
-        break;
-
-      case "3":
-        if (taskManager.tasks.length > 0) {
-          alert(
-            `Lista de tarefas:\n${taskManager.tasks
-              .map(
-                (task) =>
-                  `ID: ${task.id}\nNome: ${task.name}\nDescrição: ${task.description}\nStatus: ${task.status}\n`
-              )
-              .join("\n")}`
-          );
-        } else {
-          alert("Não há tarefas cadastradas");
-        }
-        break;
-
-      case "4":
-        isRunning = false;
-        break;
-
-      case null:
-        isRunning = false;
-        break;
-
-      default:
-        alert("Opção inválida.");
-        break;
+  removerTarefa(tarefa) {
+    const index = this.tarefas.indexOf(tarefa);
+    if (index > -1) {
+      this.#tarefas.splice(index, 1);
+    } else {
+      throw new Error("A tarefa informada não foi encontrada!");
     }
-  } catch (error) {
-    alert(error.message);
+  }
+
+  marcarConcluida(tarefa) {
+    const index = this.#tarefas.indexOf(tarefa);
+    if (index > -1) {
+      this.#tarefas[index].status = "concluída";
+    } else {
+      throw new Error("A tarefa informada não foi encontrada!");
+    }
+  }
+
+  exibirLista() {
+    return this.#tarefas;
+  }
+
+  calcularEstatisticas() {
+    const estatisticas = {
+      total: this.#tarefas.length,
+      concluidas: this.#tarefas.filter(
+        (tarefa) => tarefa.status === "concluída"
+      ).length,
+      pendentes: this.#tarefas.filter((tarefa) => tarefa.status === "pendente")
+        .length,
+    };
+    return estatisticas;
   }
 }
+
+class AplicativoToDoList {
+  #listasTarefas = [];
+  constructor() {
+    this.listaAtual = null;
+  }
+
+  criarLista(nome) {
+    if (!nome || typeof nome !== "string")
+      throw new Error("O nome da lista deve ser uma string não vazia!");
+    const novaLista = new ListaTarefas(nome);
+    this.#listasTarefas.push(novaLista);
+    this.listaAtual = novaLista;
+  }
+
+  selecionarLista(nome) {
+    const listaSelecionada = this.#listasTarefas.find(
+      (lista) => lista.nome === nome
+    );
+    if (listaSelecionada) {
+      this.listaAtual = listaSelecionada;
+      return listaSelecionada;
+    } else throw new Error("A lista informada não foi encontrada!");
+  }
+
+  exibirListasDisponiveis() {
+    return this.#listasTarefas.map((lista) => lista.nome);
+  }
+}
+
+const tarefa1 = new Tarefa("Estudar JavaScript", "alta", "pendente");
+const tarefa2 = new Tarefa("Fazer exercícios de POO", "média", "pendente");
+const tarefa3 = new Tarefa("Comprar mantimentos", "baixa", "pendente");
+const tarefa4 = new Tarefa("Correr no parque", "média", "pendente");
+
+const appToDoList = new AplicativoToDoList();
+appToDoList.criarLista("Estudos");
+appToDoList.selecionarLista("Estudos").adicionarTarefa(tarefa1);
+appToDoList.selecionarLista("Estudos").adicionarTarefa(tarefa2);
+appToDoList.criarLista("Compras");
+appToDoList.selecionarLista("Compras").adicionarTarefa(tarefa3);
+appToDoList.criarLista("Pessoal");
+appToDoList.selecionarLista("Pessoal").adicionarTarefa(tarefa4);
+
+// Exibir listas disponíveis
+console.log(appToDoList.exibirListasDisponiveis());
+
+// Exibir lista de tarefas atual
+appToDoList.listaAtual.exibirLista();
+
+// Marcar tarefa como concluída
+appToDoList.selecionarLista("Estudos");
+appToDoList.listaAtual.marcarConcluida(tarefa1);
+
+// Exibir estatísticas da lista
+console.log(appToDoList.listaAtual.calcularEstatisticas());
