@@ -1,18 +1,3 @@
-/*
-Crie um sistema de comércio eletrônico com classes como `Produto`, `CarrinhoDeCompras`, `Cliente` e `Pedido`. Os clientes podem adicionar produtos ao carrinho, realizar pedidos e rastrear o status de entrega.
-
-- **Classes:**
-
-1. `Produto`: Representa um produto disponível para compra.
-2. `CarrinhoDeCompras`: Representa o carrinho de compras de um cliente.
-3. `Cliente`: Representa um cliente que pode realizar compras.
-4. `Pedido`: Representa um pedido feito por um cliente, contendo produtos do carrinho.
-
-- **Requisitos:**
-
-1. O sistema deve permitir que os clientes adicionem produtos ao carrinho.
-2. Implementar métodos para calcular o total do pedido.
-3. Rastrear o status da entrega do pedido (pendente, em andamento, entregue). */
 class Produto {
   constructor(nome, preco) {
     if (!nome || !preco)
