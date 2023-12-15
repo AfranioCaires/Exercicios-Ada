@@ -24,25 +24,20 @@
 **Exemplo de Uso:**
 
 ```javascript
-// Criar instâncias de Tarefa, ListaTarefas e AplicativoToDoList
+// Criar instâncias de Tarefa,
 const tarefa1 = new Tarefa("Estudar JavaScript", "alta", "pendente");
 const tarefa2 = new Tarefa("Fazer exercícios de POO", "média", "pendente");
-
-const lista1 = new ListaTarefas("Trabalho");
-lista1.adicionarTarefa(tarefa1);
-lista1.adicionarTarefa(tarefa2);
-
 const tarefa3 = new Tarefa("Comprar mantimentos", "baixa", "pendente");
 const tarefa4 = new Tarefa("Correr no parque", "média", "pendente");
 
-const lista2 = new ListaTarefas("Pessoal");
-lista2.adicionarTarefa(tarefa3);
-lista2.adicionarTarefa(tarefa4);
-
 const appToDoList = new AplicativoToDoList();
 appToDoList.criarLista("Estudos");
-appToDoList.selecionarLista("Estudos");
-appToDoList.adicionarTarefa(new Tarefa("Ler livro", "média", "pendente"));
+appToDoList.selecionarLista("Estudos").adicionarTarefa(tarefa1);
+appToDoList.selecionarLista("Estudos").adicionarTarefa(tarefa2);
+appToDoList.criarLista("Compras");
+appToDoList.selecionarLista("Compras").adicionarTarefa(tarefa3);
+appToDoList.criarLista("Pessoal");
+appToDoList.selecionarLista("Pessoal").adicionarTarefa(tarefa4);
 
 // Exibir listas disponíveis
 console.log(appToDoList.exibirListasDisponiveis());
@@ -51,8 +46,9 @@ console.log(appToDoList.exibirListasDisponiveis());
 appToDoList.listaAtual.exibirLista();
 
 // Marcar tarefa como concluída
+appToDoList.selecionarLista("Estudos");
 appToDoList.listaAtual.marcarConcluida(tarefa1);
 
 // Exibir estatísticas da lista
-console.log(appToDoList.listaAtual.calcularEstatisticas());
+console.log(appToDoList.listaAtual.calcularEstatisticas
 ```
