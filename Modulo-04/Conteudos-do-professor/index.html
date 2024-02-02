@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vem ser tech</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!--
+      <script type="module" src="./js/aula-01.js" defer></script>
+      <script type="module" src="./js/aula-02.js" defer></script> 
+      <script src="./js/task-list.js" type="module"></script>
+    -->
+    <!-- <script src="./js/consulta-cep.js" type="module" defer></script> -->
+    <!-- <script src="./js/sorteador.js" type="module" defer></script> -->
+    <script type="module" src="./js/shared/models/index.js" defer></script>
+  </head>
+  <body>
+    <!-- Exercícios das aulas -->
+    <!-- <h1>Teste</h1>
+
+    <p class="paragraph">Vem ser tech</p>
+
+    <label for="inputName">Digite seu nome:</label>
+    <input type="text" id="inputName" />
+
+    <label for="checked">Estou checkado</label>
+    <input type="checkbox" name="checked" id="checked" />
+
+    <button id="button" type="button" onclick="onClickButton()">Clicar</button>
+
+    <p class="paragraph">Teste</p>
+    <p class="paragraph">Teste</p>
+    <p class="paragraph">Teste</p>
+    <p class="paragraph">Teste</p>
+    <p class="paragraph">Teste</p>
+    <p class="paragraph">Teste</p> -->
+
+    <!-- <div class="teste"></div> -->
+    <!--  -->
+
+    <!-- Task list  -->
+    <!--
+      <button type="button" onclick="remover()">remover</button>
+
+      <h1>Tarefas</h1>
+
+      <label for="nameTask">Nome da tarefa:</label>
+      <input type="text" id="nameTask" />
+      <button type="button" onclick="addTask(event)">Adicionar</button>
+
+      <ul></ul> 
+    -->
+    <!--  -->
+
+    <!-- <header>
+      <button type="button">
+        <a href="/index.html"> Form adrress </a>
+      </button>
+      <button type="button">
+        <a href="teste.html"> View adrress </a>
+      </button>
+    </header>
+
+    <h1>Formulário cep</h1>
+
+    <form>
+      <div>
+        <label for="cep">CEP: </label>
+        <input type="number" id="cep" name="cep" />
+      </div>
+
+      <div>
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" id="logradouro" disabled name="logradouro" />
+      </div>
+
+      <div>
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" disabled name="bairro" />
+      </div>
+
+      <div>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" disabled name="cidade" />
+      </div>
+
+      <div>
+        <label for="numero">Número</label>
+        <input type="text" id="numero" disabled name="numero" />
+      </div>
+
+      <div>
+        <label for="complemento">Complemento:</label>
+        <input type="text" id="complemento" disabled name="complemento" />
+      </div>
+
+      <button type="submit">Cadastrar</button>
+      <button type="reset">Limpar</button>
+    </form> -->
+
+    <!-- <label for="selectorGroups" primaryLabel>frutas: </label>
+    <select name="selectorGroups" id="selectorGroups" atributoCustom>
+      <option value="maca" atributoCustom>Maçã</option>
+      <option value="banana" atributoCustom>Banana</option>
+      <option value="laranja" atributoCustom>Laranja</option>
+      <option value="uva" atributoCustom>Uva</option>
+    </select> -->
+
+    <form onsubmit="login(event)">
+      <label for="email">E-mail:</label>
+      <input type="text" id="email" name="email" />
+
+      <label for="password">Senha</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">Fazer login</button>
+    </form>
+
+    <script>
+      async function login(event) {
+        if (event instanceof SubmitEvent) {
+          event.preventDefault();
+
+          let formData = new FormData(event.target);
+          let email = formData.get("email");
+          let password = formData.get("password");
+
+          getData(email, password)
+            .then((resp) => {
+              localStorage.setItem("token", JSON.stringify(resp));
+              let tokenInString = localStorage.getItem("token");
+              let token = JSON.parse(tokenInString);
+            })
+            .catch((error) => {
+              console.log(error);
+              console.log(error.httpStatus);
+              console.log(error.errorCode);
+              alert(error.message);
+            });
+
+          // try {
+          //   let aux = await getData(email, password);
+
+          //   localStorage.setItem("token", JSON.stringify(aux));
+
+          //   let tokenInString = localStorage.getItem("token");
+          //   let token = JSON.parse(tokenInString);
+
+          //   console.log(token);
+          // } catch (error) {
+          //   console.log(error);
+          //   console.log(error.httpStatus);
+          //   console.log(error.errorCode);
+          //   alert(error.message);
+          // }
+        }
+        console.log(event);
+      }
+
+      function getData(email, password) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            if (email == "teste@gmail.com") {
+              reject({
+                httpStatus: 400,
+                errorCode: "IFOOD- 1094",
+                message: "já existe um usuário com esse email",
+              });
+            }
+
+            if (password == "12345") {
+              reject({
+                httpStatus: 400,
+                errorCode: "IFOOD- 1095",
+                message:
+                  "Essa senha já está sendo usada pelo usuário teste@gmail.com",
+              });
+            }
+
+            resolve({ token: "sdfshkgjaojfjodfosj" });
+          }, 1000);
+        });
+      }
+    </script>
+  </body>
+</html>
