@@ -5,13 +5,16 @@ import { ButtonLink } from './../button/button.jsx'
 
 export default function Hero({ title, textContent }) {
   return (
-    <div className="hero-content container">
-      <div className="text">
-        <h1>{title}</h1>
-        <p>{textContent}</p>
-        <ButtonLink btnText={"Explorar catálogo"} link={"#catalog"} />
+    <div className="bg">
+      <div className="container hero-content">
+        <div className="text">
+          <h1>{title}</h1>
+          <p>{textContent}</p>
+          <ButtonLink btnText={"Explorar catálogo"} link={"#catalog"} />
+        </div>
       </div>
     </div>
+
   )
 }
 

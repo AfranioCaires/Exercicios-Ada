@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 import './card.css';
 import star from "./../../assets/Star.svg";
-import { BtnIcon } from '../button/button';
+import { BtnPlay } from '../button/button';
 
 export default function Card({ imgSrc, title, description, stars, genre, relaseYear, url }) {
   return (
@@ -20,7 +20,7 @@ export default function Card({ imgSrc, title, description, stars, genre, relaseY
           </span>
         </div>
         <p>{description}</p>
-        <BtnIcon icon={"src/assets/Play.svg"} width={40} link={url} alt={"botão de play"} />
+        <BtnPlay width={40} link={url} alt={"botão de play"} />
       </div>
     </article>
   );

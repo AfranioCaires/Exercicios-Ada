@@ -1,5 +1,4 @@
-
-button.btnLink {
+.btnLink {
   margin-top: 1.5em;
   border: none;
   background: none;
@@ -7,12 +6,13 @@ button.btnLink {
   padding: 1em 2em;
   background-color: transparent;
   border: 2px solid #fff;
+  color: #fff;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
 }
 
 .btnLink a {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   text-decoration: none;
-  color: #fff;
   font-weight: 500;
 }
 
@@ -20,6 +20,7 @@ button.btnLink {
 .btnLink:hover a {
   color: #000;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .btnIcon{

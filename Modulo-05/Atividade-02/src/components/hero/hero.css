@@ -1,8 +1,7 @@
 .hero-content {
+  display: grid;
   height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .hero-content .text h1 {
