@@ -1,0 +1,21 @@
+.cards-wrapper {
+  padding: 2em 0;
+  background-color: hsl(0, 0%, 8%);
+}
+
+.cards-wrapper h2 {
+  margin-bottom: 1em;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.3em;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.3em;
+}
+

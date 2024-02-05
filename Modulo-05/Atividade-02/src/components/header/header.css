@@ -1,0 +1,12 @@
+header {
+  background-color: hsl(0, 0%, 10%);
+    position: sticky;
+    top: 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center ;
+  padding: 1.5em 0;
+  justify-content: space-between;
+}

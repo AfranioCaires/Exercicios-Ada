@@ -1,0 +1,15 @@
+.hero-content {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content .text h1 {
+  margin-bottom: .5em;
+}
+
+.hero-content .text p {
+  max-width: 60ch;
+  font-size: .8rem;
+  }

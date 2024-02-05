@@ -1,0 +1,17 @@
+footer {
+  background-color: hsl(0, 0%, 7%);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em 0;
+  gap: 1em;
+}
+
+.footer-content {
+  font-size: .8rem;
+  font-weight: 700;
+  	color:  #666666;
+}
