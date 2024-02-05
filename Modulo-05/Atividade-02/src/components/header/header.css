@@ -11,7 +11,7 @@ header nav {
   justify-content: space-between;
 }
 
-/* .bg {
+.bg {
   background-image: linear-gradient(
     to right bottom,
     rgba(12, 12, 12, 0.5),
@@ -19,4 +19,4 @@ header nav {
   ), url(./img.jpg);
   background-size: cover;
   background-position: center center;
-} */
+}
