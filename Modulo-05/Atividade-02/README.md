@@ -1,6 +1,10 @@
 # We love movies
 
-Nós Amamos Filmes é uma aplicação de catálogo de filmes construída com React. Ela permite que os usuários naveguem por uma seleção de filmes de diferentes gêneros e épocas. De cinema clássico às produções mais recentes, temos opções para todos os gostos.
+Nós Amamos Filmes é uma aplicação de catálogo de filmes construída com React. Ela permite que os usuários naveguem por uma seleção de filmes de diferentes gêneros e épocas. De cinema clássico às produções mais recentes, temos opções para todos os gostos. 
+
+## Deploy
+Para acessar uma versão live do projeto, basta acessar o deploy:
+[Link do deploy na netlify]( https://jocular-mooncake-d24a37.netlify.app/ ).
 
 ## Estrutura do Projeto
 
