@@ -1,0 +1,16 @@
+.comment {
+  gap: 15px;
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.commentText {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 28px;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Inter", sans-serif;
+}
