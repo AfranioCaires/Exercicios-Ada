@@ -34,7 +34,9 @@ export default function Login() {
       return;
     }
 
-    fetch("http://localhost:3000/users")
+    fetch(
+      "https://my-json-server.typicode.com/AfranioCaires/BestBrowserGames/users"
+    )
       .then((res) => res.json())
       .then((data) => {
         const user = data.find(

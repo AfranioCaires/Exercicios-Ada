@@ -8,9 +8,7 @@ import Register from "./routes/register.jsx";
 import Root from "./routes/root.jsx";
 import ErrorPage from "./routes/errorPage.jsx";
 import AdminDashboard from "./routes/adminDashboard.jsx";
-import Profile from "./routes/profile";
 import { ThemeProvider } from "next-themes";
-import AdminDataTable from "./components/adminDataTable";
 import Dashboard from "./routes/dashboard";
 import About from "./routes/about";
 const router = createBrowserRouter([
@@ -38,10 +36,6 @@ const router = createBrowserRouter([
       {
         path: "/adminDashboard",
         element: <AdminDashboard />,
-      },
-      {
-        path: "/profile",
-        element: <Profile />,
       },
       {
         path: "/about",

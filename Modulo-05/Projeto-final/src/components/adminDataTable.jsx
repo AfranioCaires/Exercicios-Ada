@@ -53,7 +53,9 @@ export default function AdminDataTable() {
 
   const fetchGames = async () => {
     try {
-      const response = await fetch("http://localhost:3000/games");
+      const response = await fetch(
+        "https://my-json-server.typicode.com/AfranioCaires/BestBrowserGames/games"
+      );
       const games = await response.json();
       setData(games);
     } catch (error) {
@@ -67,9 +69,12 @@ export default function AdminDataTable() {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:3000/games/${id}`, {
-        method: "DELETE",
-      });
+      await fetch(
+        `https://my-json-server.typicode.com/AfranioCaires/BestBrowserGames/games/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
       fetchGames();
       toast.success("Jogo deletado com sucesso.");
     } catch (error) {
@@ -78,23 +83,26 @@ export default function AdminDataTable() {
   };
 
   const handleEditSave = (id) => {
-    fetch(`http://localhost:3000/games/${id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        title: editTitle,
-        thumbnail: editThumbnail,
-        short_description: editDescription,
-        game_url: editGameUrl,
-        genre: editGenre,
-        platform: editPlatform,
-        publisher: editPublisher,
-        developer: editDeveloper,
-        release_date: editReleaseDate,
-      }),
-    })
+    fetch(
+      `https://my-json-server.typicode.com/AfranioCaires/BestBrowserGames/games/${id}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          title: editTitle,
+          thumbnail: editThumbnail,
+          short_description: editDescription,
+          game_url: editGameUrl,
+          genre: editGenre,
+          platform: editPlatform,
+          publisher: editPublisher,
+          developer: editDeveloper,
+          release_date: editReleaseDate,
+        }),
+      }
+    )
       .then((response) => response.json())
       .then((data) => {
         fetchGames();
@@ -109,42 +117,48 @@ export default function AdminDataTable() {
   const handleSave = async () => {
     try {
       if (newGame) {
-        await fetch(`http://localhost:3000/games/${newGame.id}`, {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            id: newGame.id,
-            title,
-            thumbnail,
-            short_description: description,
-            game_url: gameUrl,
-            genre,
-            platform,
-            publisher,
-            developer,
-            release_date: releaseDate,
-          }),
-        });
+        await fetch(
+          `https://my-json-server.typicode.com/AfranioCaires/BestBrowserGames/games/${newGame.id}`,
+          {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              id: newGame.id,
+              title,
+              thumbnail,
+              short_description: description,
+              game_url: gameUrl,
+              genre,
+              platform,
+              publisher,
+              developer,
+              release_date: releaseDate,
+            }),
+          }
+        );
       } else {
-        await fetch("http://localhost:3000/games", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            title,
-            thumbnail,
-            short_description: description,
-            game_url: gameUrl,
-            genre,
-            platform,
-            publisher,
-            developer,
-            release_date: releaseDate,
-          }),
-        });
+        await fetch(
+          "https://my-json-server.typicode.com/AfranioCaires/BestBrowserGames/games",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              title,
+              thumbnail,
+              short_description: description,
+              game_url: gameUrl,
+              genre,
+              platform,
+              publisher,
+              developer,
+              release_date: releaseDate,
+            }),
+          }
+        );
       }
       fetchGames();
       resetForm();

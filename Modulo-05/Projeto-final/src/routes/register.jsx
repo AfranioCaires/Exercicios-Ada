@@ -81,13 +81,16 @@ export default function Register() {
       role: "user",
     };
 
-    fetch("http://localhost:3000/users", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
+    fetch(
+      "https://my-json-server.typicode.com/AfranioCaires/BestBrowserGames/users",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    )
       .then((response) => response.json())
       .then(() => {
         navigate("/login");

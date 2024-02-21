@@ -21,7 +21,9 @@ export default function Dashboard() {
 
   useEffect(() => {
     setIsUserLoggedIn(isLoggedIn);
-    fetch("http://localhost:3000/games")
+    fetch(
+      "https://my-json-server.typicode.com/AfranioCaires/BestBrowserGames/games"
+    )
       .then((response) => response.json())
       .then((data) => setGames(data));
   }, [isLoggedIn]);

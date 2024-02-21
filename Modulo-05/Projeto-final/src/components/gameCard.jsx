@@ -52,7 +52,9 @@ export default function GameCard({
   }, [isLoggedIn]);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/reviews`)
+    fetch(
+      `https://my-json-server.typicode.com/AfranioCaires/BestBrowserGames/reviews`
+    )
       .then((response) => response.json())
       .then((data) => {
         const filteredReviews = data.filter((review) => review.game_id === id);
@@ -64,9 +66,12 @@ export default function GameCard({
   }, [id]);
 
   function handleDeleteComment(commentId) {
-    fetch(`http://localhost:3000/reviews/${commentId}`, {
-      method: "DELETE",
-    })
+    fetch(
+      `https://my-json-server.typicode.com/AfranioCaires/BestBrowserGames/reviews/${commentId}`,
+      {
+        method: "DELETE",
+      }
+    )
       .then((response) => response.json())
       .then((data) => {
         toast.success("Comentário deletado com sucesso.");
@@ -83,7 +88,9 @@ export default function GameCard({
 
     const reviewerToken = loginToken;
 
-    fetch(`http://localhost:3000/users`)
+    fetch(
+      `https://my-json-server.typicode.com/AfranioCaires/BestBrowserGames/users`
+    )
       .then((response) => response.json())
       .then((data) => {
         const user = data.find((user) => user.email === reviewerToken);
@@ -97,13 +104,16 @@ export default function GameCard({
           reviewerToken: reviewerToken,
         };
 
-        fetch(`http://localhost:3000/reviews`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(newReview),
-        })
+        fetch(
+          `https://my-json-server.typicode.com/AfranioCaires/BestBrowserGames/reviews`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newReview),
+          }
+        )
           .then((response) => response.json())
           .then((data) => {
             toast.success("Avaliação enviada com sucesso.");
